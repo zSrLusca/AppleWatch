@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HashWatch</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/imagens/fav-icon.svg" type="image/svg+xml" />
   </head>
   <body>
     <nav>
@@ -66,10 +67,15 @@
 
           <div id="opcoes">
             <div class="cores">
-              <h2 id="nome-cor-selecionada">Cor - Azul-inverno</h2>
+              <h2 id="nome-cor-selecionada">Cor: Azul-inverno</h2>
               <ul id="selecao-cores">
                 <li>
-                  <input type="radio" name="opcao-cor" id="0-cor" />
+                  <input
+                    type="radio"
+                    name="opcao-cor"
+                    onclick="atualizarCorSelecionada()"
+                    id="0-cor"
+                  />
                   <label for="0-cor">
                     <img
                       src="./imagens/opcoes-cores/verde-cipreste.jpeg"
@@ -79,7 +85,13 @@
                 </li>
 
                 <li>
-                  <input type="radio" name="opcao-cor" id="1-cor" checked />
+                  <input
+                    type="radio"
+                    name="opcao-cor"
+                    id="1-cor"
+                    onclick="atualizarCorSelecionada()"
+                    checked
+                  />
                   <label for="1-cor">
                     <img
                       src="./imagens/opcoes-cores/azul-inverno.jpeg"
@@ -89,7 +101,12 @@
                 </li>
 
                 <li>
-                  <input type="radio" name="opcao-cor" id="2-cor" />
+                  <input
+                    type="radio"
+                    name="opcao-cor"
+                    id="2-cor"
+                    onclick="atualizarCorSelecionada()"
+                  />
                   <label for="2-cor">
                     <img
                       src="./imagens/opcoes-cores/meia-noite.jpeg"
@@ -99,7 +116,12 @@
                 </li>
 
                 <li>
-                  <input type="radio" name="opcao-cor" id="3-cor" />
+                  <input
+                    type="radio"
+                    name="opcao-cor"
+                    id="3-cor"
+                    onclick="atualizarCorSelecionada()"
+                  />
                   <label for="3-cor">
                     <img
                       src="./imagens/opcoes-cores/estelar.jpeg"
@@ -109,7 +131,12 @@
                 </li>
 
                 <li>
-                  <input type="radio" name="opcao-cor" id="4-cor" />
+                  <input
+                    type="radio"
+                    name="opcao-cor"
+                    id="4-cor"
+                    onclick="atualizarCorSelecionada()"
+                  />
                   <label for="4-cor">
                     <img
                       src="./imagens/opcoes-cores/rosa-claro.jpeg"
@@ -129,13 +156,19 @@
             <div id="tamanho-caixa">
               <h2>Tamanho da caixa</h2>
               <div id="opcoes-tamanho">
-                <input type="radio" name="opcao-tamanho" id="0-tamanho" />
+                <input
+                  type="radio"
+                  name="opcao-tamanho"
+                  id="0-tamanho"
+                  onclick="atualizarTamanho()"
+                />
                 <label for="0-tamanho"> 41 mm </label>
 
                 <input
                   type="radio"
                   name="opcao-tamanho"
                   id="1-tamanho"
+                  onclick="atualizarTamanho()"
                   checked
                 />
                 <label for="1-tamanho"> 45 mm </label>
@@ -213,7 +246,12 @@
           />
           <ul id="selecionar-imagem">
             <li>
-              <input type="radio" name="opcao-imagem" id="0-imagem" />
+              <input
+                type="radio"
+                name="opcao-imagem"
+                id="0-imagem"
+                onclick="atualizarImagemSelecionada()"
+              />
               <label for="0-imagem">
                 <img
                   src="./imagens/opcoes-cores/imagens-azul-inverno/imagem-0.jpeg"
@@ -223,7 +261,13 @@
             </li>
 
             <li>
-              <input type="radio" name="opcao-imagem" id="1-imagem" checked />
+              <input
+                type="radio"
+                name="opcao-imagem"
+                id="1-imagem"
+                onclick="atualizarImagemSelecionada()"
+                checked
+              />
               <label for="1-imagem">
                 <img
                   src="./imagens/opcoes-cores/imagens-azul-inverno/imagem-1.jpeg"
@@ -233,7 +277,12 @@
             </li>
 
             <li>
-              <input type="radio" name="opcao-imagem" id="2-imagem" />
+              <input
+                type="radio"
+                name="opcao-imagem"
+                id="2-imagem"
+                onclick="atualizarImagemSelecionada()"
+              />
               <label for="2-imagem">
                 <img
                   src="./imagens/opcoes-cores/imagens-azul-inverno/imagem-2.jpeg"
@@ -245,5 +294,6 @@
         </div>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
